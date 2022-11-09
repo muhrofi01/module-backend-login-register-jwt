@@ -1,4 +1,5 @@
 GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJNdWhhbW1hZCBBYmR1cnJvZmkiLCJlbWFpbCI6Im11aHJvZmkwMUBnbWFpbC5jb20iLCJpYXQiOjE2Njc5NTgwMTcsImV4cCI6MTY2Nzk1ODAzMn0.FNg7n4jmeiwWT3dMzgRWTgl5WudwQy1EjtysjDEcZwU
 
 ###
 POST http://localhost:5000/users
@@ -10,3 +11,18 @@ Content-Type: application/json
     "password": "spasi1kali",
     "confPassword": "spasi2kali"
 }
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "muhrofi01@gmail.com",
+    "password": "spasi1kali"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
