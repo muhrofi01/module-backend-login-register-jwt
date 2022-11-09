@@ -10,6 +10,8 @@ const app = express();
 try {
     await db.authenticate();
     console.log('Database Connected...');
+    // Uncomment sintaks dibawah ini untuk membuat tabel di database
+    // await Users.sync();
 } catch (error) {
     console.log(error);
 }
